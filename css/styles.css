@@ -19,10 +19,9 @@
   }
 
   #form-submit {
-    padding: 10px 20px 10px 20px;
-    margin-left: 35%;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    padding: 10px 100px 10px 100px;
+    margin-left: 15%;
+    margin-top: -10px;
   }
 
   #warning {
