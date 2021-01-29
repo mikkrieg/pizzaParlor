@@ -11,24 +11,27 @@ function Pizza(sauce, cheese, meat, veggie, extra, size){
 Pizza.prototype.price = function(){
   this.price = 0;
   if(this.size === 'Small'){
-    this.price = '$5';
+    this.price = '$5.00';
+    if(this.extra === "Olive oil"){
+      this.price = '$5.50';
+    } else if(this.extra === 'Oregano'){
+      this.price = '$5.25';
+    } else if(this.extra === 'Chili powder'){
+      this.price = '$6.00'
+    }
   } else if (this.size === 'Medium'){
-    this.price = '$8';
+    this.price = '$8.00';
   } else if (this.size === 'Large'){
-    this.price = '$12';
+    this.price = '$12.00';
   } else {
     this.price = 0;
   }
+
 }
 
 Pizza.prototype.names = function(){
   this.name = $('input#name').val();
 }
-
-
-
-
-
 
 // UI Logic
 $(document).ready(function(){
