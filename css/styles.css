@@ -1,7 +1,4 @@
 /* Global Element Styling */
-body {
-  background-color: rgba(214, 230, 227, 0.513)
-}
 h1 {
   margin: 3% 0;
 }
@@ -21,13 +18,18 @@ h1 {
 }
 @media only screen and (min-width: 300px) {
   /* Element Styling for mobile */
+  body {
+    background-color: rgba(214, 230, 227, 0.513)
+  }
   h2 {
     margin-top: 15%; 
   }
-
   p {
     margin-bottom: 2%;
     margin-top: 2%;
+  }
+  select {
+    margin-bottom: -2%;
   }
   /*  */
   .card {
@@ -41,7 +43,7 @@ h1 {
   #form-submit {
     padding: 10px 100px 10px 100px;
     margin-left: 15%;
-    margin-top: -1%;
+    margin-top: 2%;
   }
   #warning {
     background-color: #B33A3A;
@@ -56,10 +58,9 @@ h1 {
     padding: 10px 60px 10px 60px;
   }
 }
-
 @media only screen and (min-width: 768px) {
   /* Element styling for tablet */
-  p {
+  p, label {
     font-size: 1.2em;
   }
   /* Class styling for tablet */
@@ -82,12 +83,22 @@ h1 {
     margin-left: 18%;
   }
 }
-
-
 @media only screen and (min-width: 992px) {
   /* Element styling for desktop */
+  body {
+    background-color: rgba(156, 181, 226, 0.561)
+  }
+  select {
+    margin-top: -1%;
+  }
   /* Class styling for desktop */
+  .card{
+    width: 100%;
+  }
   /* ID styling for desktop */
+  #form-submit {
+    margin-left: 26%;
+  }
 }
 
 
