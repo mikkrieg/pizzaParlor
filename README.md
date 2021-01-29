@@ -31,16 +31,16 @@ _This is a program that will provide a user with multiple toppings and sizes to 
 ### Test 2:
 **Describe:** Pizza.prototype.price()
 <br/>
-**Test:** A prototype that will determine the price of a pizza depending on inputted values
+**Test:** A prototype that will determine the price of a pizza depending on inputted values and add a property to the object
 <br/>
 **Expect:** pizza.prototype.price().toEqual(pizza {price: })
 
 ### Test 3:
-**Describe:** Pizza.prototype.price()
+**Describe:** Pizza.prototype.names()
 <br/>
-**Test:** A prototype that will determine the price of a pizza depending on inputted values
+**Test:** A prototype that will gather the name of a user and add it as a property
 <br/>
-**Expect:** pizza.prototype.price().toEqual(pizza {price: })
+**Expect:** Pizza.prototype.names().toEqual(pizza {name: })
 
 ## Setup/Installation Requirements
 

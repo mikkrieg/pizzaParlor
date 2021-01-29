@@ -19,7 +19,7 @@ Pizza.prototype.price = function(){
   }
 }
 
-Pizza.prototype.name = function(){
+Pizza.prototype.names = function(){
   this.name = $('input#name').val();
 }
 
