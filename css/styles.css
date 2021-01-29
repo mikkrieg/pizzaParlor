@@ -1,20 +1,21 @@
-/* Global Stylings */
+/* Global Element Styling */
 body {
   background-color: rgba(214, 230, 227, 0.513)
 }
-
-#output {
-  display: none;
+h1 {
+  margin: 3% 0;
 }
-
+/* Global class styling */
 .hidden {
   display: none;
 }
-
 .bold {
   font-weight: bold;
 }
-
+/* Global ID styling */
+#output {
+  display: none;
+}
 #decoration {
   display: none;
 }
@@ -28,16 +29,19 @@ body {
     margin-bottom: 2%;
     margin-top: 2%;
   }
+  /*  */
+  .card {
+    margin-right: 22%;
+  }
   /* ID styling for mobile */
   #output {
-    margin-left: 28%;
+    margin-left: 17%;
     margin-top: 10%;
   }
   #form-submit {
     padding: 10px 100px 10px 100px;
     margin-left: 15%;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: -1%;
   }
   #warning {
     background-color: #B33A3A;
@@ -52,22 +56,38 @@ body {
     padding: 10px 60px 10px 60px;
   }
 }
+
 @media only screen and (min-width: 768px) {
+  /* Element styling for tablet */
+  p {
+    font-size: 1.2em;
+  }
+  /* Class styling for tablet */
+  .bold {
+    margin-left: 2%;
+  }
+  .card {
+    width: 80%;
+  }
+  /* ID styling for tablet */
   #form-submit {
     padding-left: 150px;
     padding-right: 150px;
     margin-left: 25%;
   }
-
-
-  #output, h2, #decoration {
-    margin-left: 58%;
+  #output-p {
+    margin: 4% 0;
+  }
+  #reload-button {
+    margin-left: 18%;
   }
 }
 
 
 @media only screen and (min-width: 992px) {
-
+  /* Element styling for desktop */
+  /* Class styling for desktop */
+  /* ID styling for desktop */
 }
 
 

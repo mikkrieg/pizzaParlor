@@ -72,19 +72,25 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-6 col-md-8">
+        <div class="col-sm-6 col-md-8 offset-md-2">
           <h2 class="text-center hidden">Order Summary</h2>
           <div id="decoration"></div>
           <div id="output">
-            <p><span id="user-name"></span>'s order:</p>
-            <p>Your size: <span id="user-size" class="bold"></span></p>
-            <p>Your sauce: <span id="user-sauce" class="bold"></span></p>
-            <p>Your cheese: <span id="user-cheese" class="bold"></span></p>
-            <p>Your meat: <span id="user-meat" class="bold"></span></p>
-            <p>Your veggies: <span id="user-veggie" class="bold"></span></p>
-            <p>Your extras: <span id="user-extra" class="bold"></span></p>
-            <p>Your total is: <span id="user-price" class="bold"></span></p>
-            <button type="button" id="reload-button" class="btn btn-info">Refresh</button>
+            <div class="card">
+              <div class="card-body">
+                <div class="card-text">
+                  <p class="output-p"><span id="user-name"></span>'s order:</p>
+                  <p class="output-p">Your size: <span id="user-size" class="bold"></span></p>
+                  <p class="output-p">Your sauce: <span id="user-sauce" class="bold"></span></p>
+                  <p class="output-p">Your cheese: <span id="user-cheese" class="bold"></span></p>
+                  <p class="output-p">Your meat: <span id="user-meat" class="bold"></span></p>
+                  <p class="output-p">Your veggies: <span id="user-veggie" class="bold"></span></p>
+                  <p class="output-p">Your extras: <span id="user-extra" class="bold"></span></p>
+                  <p class="output-p">Your total is: <span id="user-price" class="bold"></span></p>
+                  <button type="button" id="reload-button" class="btn btn-info">Refresh</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
