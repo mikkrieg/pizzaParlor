@@ -8,7 +8,9 @@ function Pizza(sauce, cheese, top1, top2, top3, size){
   this.size = size;
 }
 
-
+Pizza.prototype.price = function(){
+  this.price = 0;
+}
 
 
 
