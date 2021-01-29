@@ -35,6 +35,13 @@ _This is a program that will provide a user with multiple toppings and sizes to 
 <br/>
 **Expect:** pizza.prototype.price().toEqual(pizza {price: })
 
+### Test 3:
+**Describe:** Pizza.prototype.price()
+<br/>
+**Test:** A prototype that will determine the price of a pizza depending on inputted values
+<br/>
+**Expect:** pizza.prototype.price().toEqual(pizza {price: })
+
 ## Setup/Installation Requirements
 
 ### Local Machine
