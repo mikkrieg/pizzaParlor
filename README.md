@@ -21,9 +21,9 @@ _This is a program that will provide a user with multiple toppings and sizes to 
 
 ## Specs
 
-**Describe:** 
-**Test:** 
-**Expect:**
+**Describe:** Pizza() 
+**Test:** A constructor that will create a pizza object
+**Expect:** Pizza(sauce, cheese, top1, top2, top3, size).toEqual(pizza {sauce:, cheese:, top1:, top2:, top3:, size:})
 
 ## Setup/Installation Requirements
 
