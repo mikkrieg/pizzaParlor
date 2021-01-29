@@ -4,10 +4,18 @@
     background-color: rgba(214, 230, 227, 0.513)
   }
 
+  h2 {
+    margin-top: 10%;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
   #output {
     display: none;
     margin-left: 28%;
-    margin-top: 20%;
+    margin-top: 10%;
   }
 
   #form-submit {
@@ -22,7 +30,9 @@
     color: #FFF;
   }
   
-  
+  .hidden {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {

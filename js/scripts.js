@@ -61,6 +61,7 @@ $(document).ready(function(){
       $('div#warning').empty();
       $('form').hide();
       $('div#output').show();
+      $('h2.hidden').show();
     }
 
     newPizza.names();
@@ -74,7 +75,10 @@ $(document).ready(function(){
     $('span#user-veggie').text(newPizza.veggie);
     $('span#user-extra').text(newPizza.extra);
     $('span#user-price').text(newPizza.price);
+
+    $('button#reload-button').on('click', function(){
+      console.log("This is clicked")
+      location.reload();
+    })
   });
-
-
 });
