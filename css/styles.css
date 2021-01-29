@@ -34,6 +34,7 @@ h1 {
   /*  */
   .card {
     margin-right: 22%;
+    background-color: rgba(228, 224, 179, 0.486)
   }
   /* ID styling for mobile */
   #output {
@@ -95,10 +96,20 @@ h1 {
   .card{
     width: 100%;
   }
+  .card-text {
+    margin-left: 35%;
+  }
   /* ID styling for desktop */
   #form-submit {
     margin-left: 26%;
   }
+  #output {
+    margin-left: 0;
+  }
+  #reload-button {
+    margin-left: 0;
+  }
+
 }
 
 
