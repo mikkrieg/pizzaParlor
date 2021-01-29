@@ -1,41 +1,68 @@
+/* Global Stylings */
+body {
+  background-color: rgba(214, 230, 227, 0.513)
+}
+
+#output {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#decoration {
+  display: none;
+}
 @media only screen and (min-width: 300px) {
-
-  body {
-    background-color: rgba(214, 230, 227, 0.513)
-  }
-
+  /* Element Styling for mobile */
   h2 {
-    margin-top: 10%;
+    margin-top: 15%; 
   }
 
-  .bold {
-    font-weight: bold;
+  p {
+    margin-bottom: 2%;
+    margin-top: 2%;
   }
-
+  /* ID styling for mobile */
   #output {
-    display: none;
     margin-left: 28%;
     margin-top: 10%;
   }
-
   #form-submit {
     padding: 10px 100px 10px 100px;
     margin-left: 15%;
-    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
-
   #warning {
     background-color: #B33A3A;
     color: #FFF;
   }
-  
-  .hidden {
-    display: none;
+  #decoration {
+    border-top: 3px #000 solid;
+    margin: 5% 15%;
+  }
+  #reload-button {
+    margin-top: 8%;
+    padding: 10px 60px 10px 60px;
   }
 }
-
 @media only screen and (min-width: 768px) {
-  
+  #form-submit {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-left: 25%;
+  }
+
+
+  #output, h2, #decoration {
+    margin-left: 58%;
+  }
 }
 
 

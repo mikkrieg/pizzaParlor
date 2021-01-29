@@ -62,6 +62,8 @@ $(document).ready(function(){
       $('form').hide();
       $('div#output').show();
       $('h2.hidden').show();
+      $('h1').hide();
+      $('div#decoration').show();
     }
 
     newPizza.names();
