@@ -13,72 +13,78 @@
     <div class="container">
       <h1 class="text-center">Pizza Parlor</h1>
       <div class="row">
-        <form>
-          <label for="name">Enter your name:</label>
-          <input type="text" id="name" class="form-control">
-          <p>Select a size</p>
-          <select class="form-control" id="sizes">
-            <option></option>
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-          </select>
-          <p>Select a sauce</p>
-          <select class="form-control" id="sauces">
-            <option></option>
-            <option>Red sauce</option>
-            <option>White sauce</option>
-            <option>No sauce</option>
-          </select>
-          <p>Select cheese</p>
-          <select class="form-control" id="cheeses">
-            <option></option>
-            <option>Cheddar</option>
-            <option>Mozzarella</option>
-            <option>Havarti</option>
-            <option>No cheese</option>
-          </select>
-          <p>Select meats</p>
-          <select class="form-control" id="meats">
-            <option></option>
-            <option>Pepperoni</option>
-            <option>Chicken</option>
-            <option>Sausage</option>
-            <option>No meat</option>
-          </select>
-          <p>Select veggies</p>
-          <select class="form-control" id="veggies">
-            <option></option>
-            <option>Onions</option>
-            <option>Peppers</option>
-            <option>Olives</option>
-            <option>No veggies</option>
-          </select>
-          <p>Select extras</p>
-          <select class="form-control" id="extras">
-            <option></option>
-            <option>Olive oil</option>
-            <option>Oregano</option>
-            <option>Chili powder</option>
-            <option>No extras</option>
-          </select>
-          <br/>
-          <button type="submit" class="btn btn-success" id="form-submit">Order!</button>
-        </form>
-        <div id="warning">
+        <div class="col-sm-6">
+          <form>
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" class="form-control">
+            <p>Select a size</p>
+            <select class="form-control" id="sizes">
+              <option></option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+            <p>Select a sauce</p>
+            <select class="form-control" id="sauces">
+              <option></option>
+              <option>Red sauce</option>
+              <option>White sauce</option>
+              <option>No sauce</option>
+            </select>
+            <p>Select cheese</p>
+            <select class="form-control" id="cheeses">
+              <option></option>
+              <option>Cheddar</option>
+              <option>Mozzarella</option>
+              <option>Havarti</option>
+              <option>No cheese</option>
+            </select>
+            <p>Select meats</p>
+            <select class="form-control" id="meats">
+              <option></option>
+              <option>Pepperoni</option>
+              <option>Chicken</option>
+              <option>Sausage</option>
+              <option>No meat</option>
+            </select>
+            <p>Select veggies</p>
+            <select class="form-control" id="veggies">
+              <option></option>
+              <option>Onions</option>
+              <option>Peppers</option>
+              <option>Olives</option>
+              <option>No veggies</option>
+            </select>
+            <p>Select extras</p>
+            <select class="form-control" id="extras">
+              <option></option>
+              <option>Olive oil</option>
+              <option>Oregano</option>
+              <option>Chili powder</option>
+              <option>No extras</option>
+            </select>
+            <br/>
+            <div id="warning" class="text-center">
 
+            </div>
+            <button type="submit" class="btn btn-success" id="form-submit">Order!</button>
+          </form>
         </div>
       </div>
       <div class="row">
-        <div id="output">
-          <p><span id="user-name"></span>'s order:</p>
-          <p>Your size: <span id="user-size"></span></p>
-          <p>Your sauce: <span id="user-sauce"></span></p>
-          <p>Your cheese: <span id="user-cheese"></span></p>
-          <p>Your meat: <span id="user-meat"></span></p>
-          <p>Your veggies: <span id="user-veggie"></span></p>
-          <p>Your extras: <span id="user-extra"></span></p>
-          <p>Your total is: <span id="user-price"></span></p>
+        <div class="col-sm-6">
+          <div id="output">
+            <h2 class="text-center">Order Summary</h2>
+            <hr>
+            <p><span id="user-name"></span>'s order:</p>
+            <p>Your size: <span id="user-size"></span></p>
+            <p>Your sauce: <span id="user-sauce"></span></p>
+            <p>Your cheese: <span id="user-cheese"></span></p>
+            <p>Your meat: <span id="user-meat"></span></p>
+            <p>Your veggies: <span id="user-veggie"></span></p>
+            <p>Your extras: <span id="user-extra"></span></p>
+            <p>Your total is: <span id="user-price"></span></p>
+          </div>
         </div>
       </div>
     </div>

@@ -63,10 +63,9 @@ $(document).ready(function(){
       $('div#output').show();
     }
 
-    const userName = newPizza.names();
-    console.log(userName);
-    const price = newPizza.price();
-    console.log(price);
+    newPizza.names();
+    newPizza.price();
+
     $('span#user-name').text(newPizza.name);
     $('span#user-size').text(newPizza.size);
     $('span#user-sauce').text(newPizza.sauce);

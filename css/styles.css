@@ -1,3 +1,37 @@
-#output {
-  display: none;
+@media only screen and (min-width: 300px) {
+
+  body {
+    background-color: rgba(214, 230, 227, 0.513)
+  }
+
+  #output {
+    display: none;
+    margin-left: 28%;
+    margin-top: 20%;
+  }
+
+  #form-submit {
+    padding: 10px 20px 10px 20px;
+    margin-left: 35%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  #warning {
+    background-color: #B33A3A;
+    color: #FFF;
+  }
+  
+  
 }
+
+@media only screen and (min-width: 768px) {
+  
+}
+
+
+@media only screen and (min-width: 992px) {
+
+}
+
+
