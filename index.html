@@ -14,22 +14,24 @@
       <h1 class="text-center">Pizza Parlor</h1>
       <div class="row">
         <form>
+          <label for="name">Enter your name:</label>
+          <input type="text" id="name" class="form-control">
           <p>Select a size</p>
-          <select class="form-control">
+          <select class="form-control" id="sizes">
             <option></option>
             <option>Small</option>
             <option>Medium</option>
             <option>Large</option>
           </select>
           <p>Select a sauce</p>
-          <select class="form-control">
+          <select class="form-control" id="sauces">
             <option></option>
             <option>Red sauce</option>
             <option>White sauce</option>
             <option>No sauce</option>
           </select>
           <p>Select cheese</p>
-          <select class="form-control">
+          <select class="form-control" id="cheeses">
             <option></option>
             <option>Cheddar</option>
             <option>Mozzarella</option>
@@ -37,7 +39,7 @@
             <option>No cheese</option>
           </select>
           <p>Select topping 1</p>
-          <select class="form-control">
+          <select class="form-control" id="meats">
             <option></option>
             <option>Pepperoni</option>
             <option>Chicken</option>
@@ -45,7 +47,7 @@
             <option>No meat</option>
           </select>
           <p>Select topping 2</p>
-          <select class="form-control">
+          <select class="form-control" id="veggies">
             <option></option>
             <option>Onions</option>
             <option>Peppers</option>
@@ -53,14 +55,19 @@
             <option>No veggies</option>
           </select>
           <p>Select topping 3</p>
-          <select class="form-control">
+          <select class="form-control" id="extras">
             <option></option>
             <option>Olive oil</option>
             <option>Oregano</option>
             <option>Chili powder</option>
-            <option>No extra seasoning</option>
+            <option>No extras</option>
           </select>
+          <br/>
+          <button type="submit" class="btn btn-success" id="form-submit">Order!</button>
         </form>
+        <div id="output">
+          <p></p>
+        </div>
       </div>
     </div>
   </body>

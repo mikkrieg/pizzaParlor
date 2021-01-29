@@ -1,18 +1,27 @@
 // Business Logic
-function Pizza(sauce, cheese, top1, top2, top3, size){
+function Pizza(sauce, cheese, meat, veggie, extra, size){
   this.sauce = sauce;
   this.cheese = cheese;
-  this.topping1 = top1;
-  this.topping2 = top2;
-  this.topping3 = top3;
+  this.meatTopping = meat;
+  this.vegtopping = veggie;
+  this.extraTopping = extra;
   this.size = size;
 }
 
 Pizza.prototype.price = function(){
   this.price = 0;
+  if(this.size === 'small'){
+    this.price = '$5';
+  } else if (this.size === 'medium'){
+    this.price = '$8';
+  } else {
+    this.price = '$12';
+  }
 }
 
-
+Pizza.prototype.name = function(){
+  this.name = $('input#name').val();
+}
 
 
 
