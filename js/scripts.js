@@ -32,5 +32,38 @@ Pizza.prototype.names = function(){
 
 // UI Logic
 $(document).ready(function(){
+  $('form').submit(function(e){
+    e.preventDefault();
+    const name = $('input#name').val();
+    const size = $('select#sizes').val();
+    const sauce = $('select#sauces').val();
+    const cheese = $('select#cheeses').val();
+    const meats = $('select#meats').val();
+    const veggie = $('select#veggies').val();
+    const extras =$('select#extras').val();
+    let newPizza = new Pizza(sauce, cheese, meats, veggie, extras, size);
+    
+    if(name === ''){
+      $('div#warning').text("Please enter your name");
+    } else if(size === ''){
+      $('div#warning').text("Please enter a size");
+    } else if(sauce === ''){
+      $('div#warning').text("Please enter a sauce");
+    } else if(cheese === ''){
+      $('div#warning').text("Please enter a cheese");
+    } else if(meats === ''){
+      $('div#warning').text("Please enter a meat");
+    } else if(veggie === ''){
+      $('div#warning').text("Please enter a veggie");
+    } else if(extras === ''){
+      $('div#warning').text("Please enter any extras");
+    } else {
+      $('div#warning').empty();
+    }
+
+
+
+  });
+
 
 });
