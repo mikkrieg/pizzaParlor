@@ -21,8 +21,22 @@ Pizza.prototype.price = function(){
     }
   } else if (this.size === 'Medium'){
     this.price = '$8.00';
+    if(this.extra === "Olive oil"){
+      this.price = '$8.50';
+    } else if(this.extra === 'Oregano'){
+      this.price = '$8.25';
+    } else if(this.extra === 'Chili powder'){
+      this.price = '$9.00'
+    }
   } else if (this.size === 'Large'){
     this.price = '$12.00';
+    if(this.extra === "Olive oil"){
+      this.price = '$12.50';
+    } else if(this.extra === 'Oregano'){
+      this.price = '$12.25';
+    } else if(this.extra === 'Chili powder'){
+      this.price = '$13.00'
+    }
   } else {
     this.price = 0;
   }
