@@ -3,6 +3,9 @@ h1 {
   margin: 3% 0;
 }
 /* Global class styling */
+.hidden {
+  display: none;
+}
 .bold {
   font-weight: bold;
 }

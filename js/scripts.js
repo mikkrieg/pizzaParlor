@@ -84,6 +84,8 @@ $(document).ready(function(){
       $('form').hide();
       $('h1').hide();
       $('div#output').show();
+      $('h2.hidden').show();
+      $('div#decoration').show();
     }
     newPizza.names();
     newPizza.price();
