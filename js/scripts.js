@@ -9,7 +9,7 @@ function Pizza(sauce, cheese, meat, veggie, extra, size){
 }
 
 Pizza.prototype.price = function(){
-  this.price = 0;
+  this.price = '0';
   if(this.size === 'Small'){
     this.price = '$5.00';
     if(this.extra === "Olive oil"){
