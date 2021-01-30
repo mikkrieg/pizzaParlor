@@ -7,7 +7,6 @@ function Pizza(sauce, cheese, meat, veggie, extra, size){
   this.extra = extra;
   this.size = size;
 }
-
 Pizza.prototype.price = function(){
   this.price = '0';
   if(this.size === 'Small'){
@@ -41,11 +40,9 @@ Pizza.prototype.price = function(){
     this.price = 0;
   }
 }
-
 Pizza.prototype.names = function(){
   this.name = $('input#name').val();
 }
-
 Pizza.prototype.displayReciept = function(){
     $('span#user-name').text(this.name);
     $('span#user-size').text(this.size);
@@ -56,7 +53,6 @@ Pizza.prototype.displayReciept = function(){
     $('span#user-extra').text(this.extra);
     $('span#user-price').text(this.price);
 }
-
 // UI Logic
 $(document).ready(function(){
   $('form').submit(function(e){
@@ -69,7 +65,6 @@ $(document).ready(function(){
     const veggie = $('select#veggies').val();
     const extras =$('select#extras').val();
     let newPizza = new Pizza(sauce, cheese, meats, veggie, extras, size);
-    console.log(newPizza);
     if(name === ''){
       $('div#warning').text("Please enter your name");
     } else if(size === ''){
@@ -87,10 +82,8 @@ $(document).ready(function(){
     } else {
       $('div#warning').empty();
       $('form').hide();
-      $('div#output').show();
-      $('h2.hidden').show();
       $('h1').hide();
-      $('div#decoration').show();
+      $('div#output').show();
     }
     newPizza.names();
     newPizza.price();
