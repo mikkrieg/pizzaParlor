@@ -61,7 +61,7 @@ _This is a program that will provide a user with multiple toppings and sizes to 
 
 ## Known Bugs
 
-* _No Known Bugs_
+* _Improvements can be made to the responsive design of this site_
 
 ## License
 
