@@ -31,7 +31,7 @@ h1 {
   select {
     margin-bottom: -2%;
   }
-  /*  */
+  /* Class styling for mobile */
   .card {
     margin-right: 22%;
     background-color: rgba(228, 224, 179, 0.486)
@@ -109,7 +109,6 @@ h1 {
   #reload-button {
     margin-left: 0;
   }
-
 }
 
 

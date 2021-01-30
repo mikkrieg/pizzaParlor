@@ -17,7 +17,7 @@ Pizza.prototype.price = function(){
     } else if(this.extra === 'Oregano'){
       this.price = '$5.25';
     } else if(this.extra === 'Chili powder'){
-      this.price = '$6.00'
+      this.price = '$6.00';
     }
   } else if (this.size === 'Medium'){
     this.price = '$8.00';
@@ -26,7 +26,7 @@ Pizza.prototype.price = function(){
     } else if(this.extra === 'Oregano'){
       this.price = '$8.25';
     } else if(this.extra === 'Chili powder'){
-      this.price = '$9.00'
+      this.price = '$9.00';
     }
   } else if (this.size === 'Large'){
     this.price = '$12.00';
@@ -35,7 +35,7 @@ Pizza.prototype.price = function(){
     } else if(this.extra === 'Oregano'){
       this.price = '$12.25';
     } else if(this.extra === 'Chili powder'){
-      this.price = '$13.00'
+      this.price = '$13.00';
     }
   } else {
     this.price = 0;
@@ -82,10 +82,8 @@ $(document).ready(function(){
       $('h1').hide();
       $('div#decoration').show();
     }
-
     newPizza.names();
     newPizza.price();
-
     $('span#user-name').text(newPizza.name);
     $('span#user-size').text(newPizza.size);
     $('span#user-sauce').text(newPizza.sauce);
@@ -94,7 +92,6 @@ $(document).ready(function(){
     $('span#user-veggie').text(newPizza.veggie);
     $('span#user-extra').text(newPizza.extra);
     $('span#user-price').text(newPizza.price);
-
     $('button#reload-button').on('click', function(){
       console.log("This is clicked")
       location.reload();
