@@ -42,6 +42,13 @@ _This is a program that will provide a user with multiple toppings and sizes to 
 <br/>
 **Expect:** Pizza.prototype.names().toEqual(pizza {name: })
 
+### Test 4:
+**Describe:** Pizza.prototype.displayReciept()
+<br/>
+**Test:** A prototype that will display the objects properties to the user
+<br/>
+**Expect:** Pizza.prototype.displayReciept().toEqual(display(name, size, sauce, cheese, meats, veggies, extras))
+
 ## Setup/Installation Requirements
 
 ### Local Machine

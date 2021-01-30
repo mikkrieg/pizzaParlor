@@ -40,11 +40,21 @@ Pizza.prototype.price = function(){
   } else {
     this.price = 0;
   }
-
 }
 
 Pizza.prototype.names = function(){
   this.name = $('input#name').val();
+}
+
+Pizza.prototype.displayReciept = function(){
+    $('span#user-name').text(this.name);
+    $('span#user-size').text(this.size);
+    $('span#user-sauce').text(this.sauce);
+    $('span#user-cheese').text(this.cheese);
+    $('span#user-meat').text(this.meat);
+    $('span#user-veggie').text(this.veggie);
+    $('span#user-extra').text(this.extra);
+    $('span#user-price').text(this.price);
 }
 
 // UI Logic
@@ -84,14 +94,7 @@ $(document).ready(function(){
     }
     newPizza.names();
     newPizza.price();
-    $('span#user-name').text(newPizza.name);
-    $('span#user-size').text(newPizza.size);
-    $('span#user-sauce').text(newPizza.sauce);
-    $('span#user-cheese').text(newPizza.cheese);
-    $('span#user-meat').text(newPizza.meat);
-    $('span#user-veggie').text(newPizza.veggie);
-    $('span#user-extra').text(newPizza.extra);
-    $('span#user-price').text(newPizza.price);
+    newPizza.displayReciept();
     $('button#reload-button').on('click', function(){
       console.log("This is clicked")
       location.reload();
