@@ -13,6 +13,9 @@ h1 {
 #output {
   display: none;
 }
+#decoration {
+  display: none;
+}
 @media only screen and (min-width: 300px) {
   /* Element Styling for mobile */
   body {
