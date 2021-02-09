@@ -37,22 +37,10 @@ Pizza.prototype.price = function(){
       this.price = '$13.00';
     }
   } else {
-    this.price = 0;
+    this.price = '0';
   }
 }
-Pizza.prototype.names = function(){
-  this.name = $('input#name').val();
-}
-Pizza.prototype.displayReciept = function(){
-    $('span#user-name').text(this.name);
-    $('span#user-size').text(this.size);
-    $('span#user-sauce').text(this.sauce);
-    $('span#user-cheese').text(this.cheese);
-    $('span#user-meat').text(this.meat);
-    $('span#user-veggie').text(this.veggie);
-    $('span#user-extra').text(this.extra);
-    $('span#user-price').text(this.price);
-}
+
 // UI Logic
 $(document).ready(function(){
   $('form').submit(function(e){
@@ -64,7 +52,6 @@ $(document).ready(function(){
     const meats = $('select#meats').val();
     const veggie = $('select#veggies').val();
     const extras =$('select#extras').val();
-    let newPizza = new Pizza(sauce, cheese, meats, veggie, extras, size);
     if(name === ''){
       $('div#warning').text("Please enter your name");
     } else if(size === ''){
@@ -87,11 +74,24 @@ $(document).ready(function(){
       $('h2.hidden').show();
       $('div#decoration').show();
     }
-    newPizza.names();
+    let newPizza = new Pizza(sauce, cheese, meats, veggie, extras, size);
     newPizza.price();
-    newPizza.displayReciept();
+    names(newPizza);
+    displayReciept(newPizza);
+    function names(newPizza){
+      newPizza.name = $('input#name').val();
+    }
+    function displayReciept(newPizza){
+      $('span#user-name').text(newPizza.name);
+      $('span#user-size').text(newPizza.size);
+      $('span#user-sauce').text(newPizza.sauce);
+      $('span#user-cheese').text(newPizza.cheese);
+      $('span#user-meat').text(newPizza.meat);
+      $('span#user-veggie').text(newPizza.veggie);
+      $('span#user-extra').text(newPizza.extra);
+      $('span#user-price').text(newPizza.price);
+  }
     $('button#reload-button').on('click', function(){
-      console.log("This is clicked")
       location.reload();
     })
   });

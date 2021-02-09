@@ -35,26 +35,13 @@ _This is a program that will provide a user with multiple toppings and sizes to 
 <br/>
 **Expect:** pizza.prototype.price().toEqual(pizza {price: })
 
-### Test 3:
-**Describe:** Pizza.prototype.names()
-<br/>
-**Test:** A prototype that will gather the name of a user and add it as a property
-<br/>
-**Expect:** Pizza.prototype.names().toEqual(pizza {name: })
-
-### Test 4:
-**Describe:** Pizza.prototype.displayReciept()
-<br/>
-**Test:** A prototype that will display the objects properties to the user
-<br/>
-**Expect:** Pizza.prototype.displayReciept().toEqual(display(name, size, sauce, cheese, meats, veggies, extras))
-
 ## Setup/Installation Requirements
 
 ### Local Machine
-* _Clone this repository to your machine_
-* _Navigate to the top level directory_
+* _Clone this repository to a directory on your machine_
+* _Navigate to the top level directory of the cloned repository_
 * _Open index.html in your browser_
+* _Enter your name and select toppings to make a pizza_
 
 ### Web Version
 * [Github Pages](https://mikkrieg.github.io/pizzaParlor/)
